@@ -5,10 +5,13 @@ declared-services:
   BluePic-Cloudant:
     label: cloudantNoSQLDB
     plan: Lite
+  Investment-Portfolio-sm:
+    label: InvestmentPortfolio
 applications:
 - services:
    - conversation-service
    - BluePic-Cloudant
+   - Investment-Portfolio-sm
   name: portfolio-chat-newbot
   command: npm start
   path: .
