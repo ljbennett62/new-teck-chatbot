@@ -1,6 +1,6 @@
 declared-services:
-  conversation-service:
-    label: conversation
+  conversation:
+    label: Conversation
     plan: free
   BluePic-Cloudant:
     label: cloudantNoSQLDB
@@ -9,7 +9,7 @@ declared-services:
     label: InvestmentPortfolio
 applications:
 - services:
-   - conversation-service
+   - Conversation
    - BluePic-Cloudant
    - Investment-Portfolio-sm
   name: portfolio-chat-newbot
